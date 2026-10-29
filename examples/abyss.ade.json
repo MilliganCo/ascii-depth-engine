@@ -1,0 +1,431 @@
+{
+  "format": "ascii-depth-engine",
+  "schemaVersion": 1,
+  "id": "abyss",
+  "name": "Погружение",
+  "scene": {
+    "seed": 73129,
+    "resolution": {
+      "width": 1600,
+      "height": 900
+    },
+    "cell": {
+      "width": 12.5,
+      "height": 18.75,
+      "glyphMode": "structural"
+    },
+    "camera": {
+      "x": 0,
+      "y": 0,
+      "zoom": 1,
+      "cinematic": true
+    },
+    "environment": {
+      "background": "#040e18",
+      "fogColor": "#173b50",
+      "fogDensity": 0.85,
+      "fogStart": 0.1,
+      "ambient": 0.65,
+      "wind": 0.5,
+      "timeOfDay": 0.25,
+      "palette": "ocean"
+    },
+    "layers": [
+      {
+        "id": "abyss-layer-0",
+        "name": "Свет с поверхности",
+        "visible": true,
+        "locked": false,
+        "depth": 0.02,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 0.9,
+        "fogInfluence": 0.35,
+        "lightResponse": 1,
+        "blendMode": "additive",
+        "tint": "#87cad2",
+        "seedOffset": 997,
+        "type": "procedural",
+        "generator": {
+          "name": "rays",
+          "density": 0.84,
+          "amplitude": 0.65,
+          "frequency": 2,
+          "speed": 0.2,
+          "variation": 0.5,
+          "horizon": 0.05,
+          "count": 18
+        }
+      },
+      {
+        "id": "abyss-layer-1",
+        "name": "Дальняя синева",
+        "visible": true,
+        "locked": false,
+        "depth": 0.08,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 0.36,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "normal",
+        "tint": "#355a71",
+        "seedOffset": 1994,
+        "type": "procedural",
+        "generator": {
+          "name": "haze",
+          "density": 0.34,
+          "amplitude": 0.15,
+          "frequency": 2,
+          "speed": 0.2,
+          "variation": 0.5,
+          "horizon": 0.35,
+          "count": 18
+        }
+      },
+      {
+        "id": "abyss-layer-2",
+        "name": "Глубинный хребет",
+        "visible": true,
+        "locked": false,
+        "depth": 0.16,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 0.5,
+        "blendMode": "normal",
+        "tint": "#355b79",
+        "seedOffset": 2991,
+        "type": "procedural",
+        "generator": {
+          "name": "terrain",
+          "density": 0.75,
+          "amplitude": 0.26,
+          "frequency": 2,
+          "speed": 0.2,
+          "variation": 0.1,
+          "horizon": 0.72,
+          "count": 18
+        }
+      },
+      {
+        "id": "abyss-layer-3",
+        "name": "Далёкая взвесь",
+        "visible": true,
+        "locked": false,
+        "depth": 0.22,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "additive",
+        "tint": "#6295ae",
+        "seedOffset": 3988,
+        "type": "particles",
+        "system": {
+          "name": "dust",
+          "count": 100,
+          "speed": 0.15,
+          "size": 0.7
+        }
+      },
+      {
+        "id": "abyss-layer-4",
+        "name": "Рыбы в глубине",
+        "visible": true,
+        "locked": false,
+        "depth": 0.28,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 0.55,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "normal",
+        "tint": "#6b9cb0",
+        "seedOffset": 4985,
+        "type": "procedural",
+        "generator": {
+          "name": "fish",
+          "density": 0.75,
+          "amplitude": 0.22,
+          "frequency": 2,
+          "speed": 0.28,
+          "variation": 0.5,
+          "horizon": 0.32,
+          "count": 10
+        }
+      },
+      {
+        "id": "abyss-layer-5",
+        "name": "Средний риф",
+        "visible": true,
+        "locked": false,
+        "depth": 0.38,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "normal",
+        "tint": "#5794a5",
+        "seedOffset": 5982,
+        "type": "procedural",
+        "generator": {
+          "name": "terrain",
+          "density": 0.75,
+          "amplitude": 0.3,
+          "frequency": 2,
+          "speed": 0.2,
+          "variation": 0.65,
+          "horizon": 0.82,
+          "count": 18
+        }
+      },
+      {
+        "id": "abyss-layer-6",
+        "name": "Лес ламинарии",
+        "visible": true,
+        "locked": false,
+        "depth": 0.47,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "normal",
+        "tint": "#4b949a",
+        "seedOffset": 6979,
+        "type": "procedural",
+        "generator": {
+          "name": "kelp",
+          "density": 0.75,
+          "amplitude": 0.42,
+          "frequency": 2,
+          "speed": 0.4,
+          "variation": 0.5,
+          "horizon": 0.92,
+          "count": 25
+        }
+      },
+      {
+        "id": "abyss-layer-7",
+        "name": "Стайка серебристых рыб",
+        "visible": true,
+        "locked": false,
+        "depth": 0.56,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "normal",
+        "tint": "#9adad6",
+        "seedOffset": 7976,
+        "type": "procedural",
+        "generator": {
+          "name": "fish",
+          "density": 0.75,
+          "amplitude": 0.28,
+          "frequency": 2,
+          "speed": 0.38,
+          "variation": 0.5,
+          "horizon": 0.4,
+          "count": 16
+        }
+      },
+      {
+        "id": "abyss-layer-8",
+        "name": "Пузырьки среднего плана",
+        "visible": true,
+        "locked": false,
+        "depth": 0.64,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "additive",
+        "tint": "#6dabae",
+        "seedOffset": 8973,
+        "type": "particles",
+        "system": {
+          "name": "bubbles",
+          "count": 38,
+          "speed": 0.35,
+          "size": 0.7
+        }
+      },
+      {
+        "id": "abyss-layer-9",
+        "name": "Скалы переднего плана",
+        "visible": true,
+        "locked": false,
+        "depth": 0.73,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 1,
+        "fogInfluence": 0.4,
+        "lightResponse": 1,
+        "blendMode": "normal",
+        "tint": "#70a5a2",
+        "seedOffset": 9970,
+        "type": "procedural",
+        "generator": {
+          "name": "terrain",
+          "density": 0.68,
+          "amplitude": 0.52,
+          "frequency": 1.2,
+          "speed": 0.2,
+          "variation": 0.95,
+          "horizon": 0.99,
+          "count": 18
+        }
+      },
+      {
+        "id": "abyss-layer-10",
+        "name": "Кораллы и растения",
+        "visible": true,
+        "locked": false,
+        "depth": 0.84,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 1,
+        "fogInfluence": 0.3,
+        "lightResponse": 1,
+        "blendMode": "normal",
+        "tint": "#92dcbd",
+        "seedOffset": 10967,
+        "type": "procedural",
+        "generator": {
+          "name": "kelp",
+          "density": 0.75,
+          "amplitude": 0.3,
+          "frequency": 2,
+          "speed": 0.55,
+          "variation": 0.5,
+          "horizon": 1,
+          "count": 10
+        }
+      },
+      {
+        "id": "abyss-layer-11",
+        "name": "Близкие пузырьки",
+        "visible": true,
+        "locked": false,
+        "depth": 0.93,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "additive",
+        "tint": "#b3e7df",
+        "seedOffset": 11964,
+        "type": "particles",
+        "system": {
+          "name": "bubbles",
+          "count": 16,
+          "speed": 0.48,
+          "size": 1.4
+        }
+      },
+      {
+        "id": "abyss-layer-12",
+        "name": "Пелена у камеры",
+        "visible": true,
+        "locked": false,
+        "depth": 0.96,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 0.15,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "additive",
+        "tint": "#598d9b",
+        "seedOffset": 12961,
+        "type": "procedural",
+        "generator": {
+          "name": "haze",
+          "density": 0.18,
+          "amplitude": 0.12,
+          "frequency": 2,
+          "speed": 0.2,
+          "variation": 0.5,
+          "horizon": 0.75,
+          "count": 18
+        }
+      }
+    ],
+    "lights": [
+      {
+        "id": "abyss-light",
+        "x": -300,
+        "y": -260,
+        "radius": 780,
+        "intensity": 1.35,
+        "color": "#82d0cd",
+        "motion": 0.35,
+        "spot": true
+      }
+    ],
+    "timeline": {
+      "duration": 60,
+      "loop": true,
+      "tracks": []
+    }
+  }
+}

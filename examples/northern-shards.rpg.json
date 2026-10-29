@@ -1,0 +1,31 @@
+{
+  "format": "ascii-fantasy-rpg",
+  "version": 1,
+  "seed": 42017,
+  "player": {
+    "x": 0,
+    "z": 12,
+    "y": 2.5400414458476,
+    "yaw": 0,
+    "pitch": 0,
+    "health": 100,
+    "stamina": 100,
+    "level": 1,
+    "xp": 0,
+    "gold": 5,
+    "potions": 3
+  },
+  "checkpoint": {
+    "x": 0,
+    "z": 12
+  },
+  "quest": "available",
+  "enemies": {},
+  "opened": [],
+  "discovered": [
+    "village:start"
+  ],
+  "visited": [
+    "0:0"
+  ]
+}

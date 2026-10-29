@@ -1,0 +1,400 @@
+{
+  "format": "ascii-depth-engine",
+  "schemaVersion": 1,
+  "id": "harbor",
+  "name": "Неоновая гавань",
+  "scene": {
+    "seed": 91281,
+    "resolution": {
+      "width": 1600,
+      "height": 900
+    },
+    "cell": {
+      "width": 12.5,
+      "height": 18.75,
+      "glyphMode": "structural"
+    },
+    "camera": {
+      "x": 0,
+      "y": 0,
+      "zoom": 1,
+      "cinematic": true
+    },
+    "environment": {
+      "background": "#090e22",
+      "fogColor": "#303657",
+      "fogDensity": 0.85,
+      "fogStart": 0.1,
+      "ambient": 0.65,
+      "wind": 0.5,
+      "timeOfDay": 0.25,
+      "palette": "neon"
+    },
+    "layers": [
+      {
+        "id": "harbor-layer-0",
+        "name": "Ночное небо",
+        "visible": true,
+        "locked": false,
+        "depth": 0.03,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "normal",
+        "tint": "#849cc3",
+        "seedOffset": 997,
+        "type": "procedural",
+        "generator": {
+          "name": "stars",
+          "density": 0.8,
+          "amplitude": 0.3,
+          "frequency": 2,
+          "speed": 0.2,
+          "variation": 0.5,
+          "horizon": 0.5,
+          "count": 100
+        }
+      },
+      {
+        "id": "harbor-layer-1",
+        "name": "Облака над портом",
+        "visible": true,
+        "locked": false,
+        "depth": 0.12,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 0.27,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "normal",
+        "tint": "#777da1",
+        "seedOffset": 1994,
+        "type": "procedural",
+        "generator": {
+          "name": "haze",
+          "density": 0.75,
+          "amplitude": 0.12,
+          "frequency": 2,
+          "speed": 0.2,
+          "variation": 0.5,
+          "horizon": 0.25,
+          "count": 18
+        }
+      },
+      {
+        "id": "harbor-layer-2",
+        "name": "Дальний квартал",
+        "visible": true,
+        "locked": false,
+        "depth": 0.21,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "normal",
+        "tint": "#485777",
+        "seedOffset": 2991,
+        "type": "procedural",
+        "generator": {
+          "name": "city",
+          "density": 0.75,
+          "amplitude": 0.52,
+          "frequency": 2,
+          "speed": 0.2,
+          "variation": 0.35,
+          "horizon": 0.69,
+          "count": 22
+        }
+      },
+      {
+        "id": "harbor-layer-3",
+        "name": "Средние здания и окна",
+        "visible": true,
+        "locked": false,
+        "depth": 0.33,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "normal",
+        "tint": "#9d91af",
+        "seedOffset": 3988,
+        "type": "procedural",
+        "generator": {
+          "name": "city",
+          "density": 0.75,
+          "amplitude": 0.56,
+          "frequency": 2,
+          "speed": 0.2,
+          "variation": 0.7,
+          "horizon": 0.7,
+          "count": 15
+        }
+      },
+      {
+        "id": "harbor-layer-4",
+        "name": "Дым у крыш",
+        "visible": true,
+        "locked": false,
+        "depth": 0.4,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 0.23,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "normal",
+        "tint": "#777294",
+        "seedOffset": 4985,
+        "type": "procedural",
+        "generator": {
+          "name": "haze",
+          "density": 0.75,
+          "amplitude": 0.12,
+          "frequency": 2,
+          "speed": 0.2,
+          "variation": 0.5,
+          "horizon": 0.4,
+          "count": 18
+        }
+      },
+      {
+        "id": "harbor-layer-5",
+        "name": "Портовые краны",
+        "visible": true,
+        "locked": false,
+        "depth": 0.48,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "normal",
+        "tint": "#b4a6b6",
+        "seedOffset": 5982,
+        "type": "procedural",
+        "generator": {
+          "name": "crane",
+          "density": 0.75,
+          "amplitude": 0.64,
+          "frequency": 2,
+          "speed": 0.2,
+          "variation": 0.5,
+          "horizon": 0.72,
+          "count": 3
+        }
+      },
+      {
+        "id": "harbor-layer-6",
+        "name": "Неоновая вывеска",
+        "visible": true,
+        "locked": false,
+        "depth": 0.54,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 170,
+          "y": 40
+        },
+        "scale": 0.9,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 0,
+        "blendMode": "additive",
+        "tint": "#e6af8c",
+        "seedOffset": 0,
+        "type": "textGrid",
+        "text": "[ N O R T H   P I E R ]"
+      },
+      {
+        "id": "harbor-layer-7",
+        "name": "Вода и отражения",
+        "visible": true,
+        "locked": false,
+        "depth": 0.61,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "normal",
+        "tint": "#827995",
+        "seedOffset": 7976,
+        "type": "procedural",
+        "generator": {
+          "name": "water",
+          "density": 0.6,
+          "amplitude": 0.6,
+          "frequency": 2,
+          "speed": 0.3,
+          "variation": 0.5,
+          "horizon": 0.72,
+          "count": 18
+        }
+      },
+      {
+        "id": "harbor-layer-8",
+        "name": "Лодки",
+        "visible": true,
+        "locked": false,
+        "depth": 0.69,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "normal",
+        "tint": "#cdb896",
+        "seedOffset": 8973,
+        "type": "procedural",
+        "generator": {
+          "name": "boats",
+          "density": 0.75,
+          "amplitude": 0.16,
+          "frequency": 2,
+          "speed": 0.2,
+          "variation": 0.5,
+          "horizon": 0.77,
+          "count": 5
+        }
+      },
+      {
+        "id": "harbor-layer-9",
+        "name": "Ближний причал",
+        "visible": true,
+        "locked": false,
+        "depth": 0.79,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "normal",
+        "tint": "#6f798a",
+        "seedOffset": 9970,
+        "type": "procedural",
+        "generator": {
+          "name": "terrain",
+          "density": 0.75,
+          "amplitude": 0.09,
+          "frequency": 0.3,
+          "speed": 0.2,
+          "variation": 0.5,
+          "horizon": 0.99,
+          "count": 18
+        }
+      },
+      {
+        "id": "harbor-layer-10",
+        "name": "Дождь над водой",
+        "visible": true,
+        "locked": false,
+        "depth": 0.87,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "additive",
+        "tint": "#a9b9d0",
+        "seedOffset": 10967,
+        "type": "particles",
+        "system": {
+          "name": "rain",
+          "count": 220,
+          "speed": 0.6,
+          "size": 1.4
+        }
+      },
+      {
+        "id": "harbor-layer-11",
+        "name": "Дымка на набережной",
+        "visible": true,
+        "locked": false,
+        "depth": 0.95,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 0.2,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "additive",
+        "tint": "#93849e",
+        "seedOffset": 11964,
+        "type": "procedural",
+        "generator": {
+          "name": "haze",
+          "density": 0.75,
+          "amplitude": 0.1,
+          "frequency": 2,
+          "speed": 0.2,
+          "variation": 0.5,
+          "horizon": 0.88,
+          "count": 18
+        }
+      }
+    ],
+    "lights": [
+      {
+        "id": "harbor-light",
+        "x": 200,
+        "y": -260,
+        "radius": 780,
+        "intensity": 1.35,
+        "color": "#e1bf8b",
+        "motion": 0.35,
+        "spot": false
+      }
+    ],
+    "timeline": {
+      "duration": 60,
+      "loop": true,
+      "tracks": []
+    }
+  }
+}

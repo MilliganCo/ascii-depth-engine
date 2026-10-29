@@ -1,0 +1,422 @@
+{
+  "format": "ascii-depth-engine",
+  "schemaVersion": 1,
+  "id": "game-world",
+  "name": "Процедурный 3D-мир",
+  "scene": {
+    "seed": 42017,
+    "resolution": {
+      "width": 1600,
+      "height": 900
+    },
+    "cell": {
+      "width": 12.5,
+      "height": 18.75,
+      "glyphMode": "structural"
+    },
+    "camera": {
+      "x": 0,
+      "y": 0,
+      "zoom": 1,
+      "cinematic": true
+    },
+    "environment": {
+      "background": "#101d22",
+      "fogColor": "#425d5c",
+      "fogDensity": 0.85,
+      "fogStart": 0.1,
+      "ambient": 0.65,
+      "wind": 0.5,
+      "timeOfDay": 0.5,
+      "palette": "forest"
+    },
+    "layers": [
+      {
+        "id": "forest-layer-0",
+        "name": "Рассветное небо",
+        "visible": true,
+        "locked": false,
+        "depth": 0.02,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 0.6,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "additive",
+        "tint": "#c4cda7",
+        "seedOffset": 997,
+        "type": "procedural",
+        "generator": {
+          "name": "rays",
+          "density": 0.5,
+          "amplitude": 0.8,
+          "frequency": 2,
+          "speed": 0.2,
+          "variation": 0.5,
+          "horizon": 0.7,
+          "count": 18
+        }
+      },
+      {
+        "id": "forest-layer-1",
+        "name": "Дальние горы",
+        "visible": true,
+        "locked": false,
+        "depth": 0.1,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "normal",
+        "tint": "#637d84",
+        "seedOffset": 1994,
+        "type": "procedural",
+        "generator": {
+          "name": "terrain",
+          "density": 0.75,
+          "amplitude": 0.28,
+          "frequency": 3,
+          "speed": 0.2,
+          "variation": 0.5,
+          "horizon": 0.6,
+          "count": 18
+        }
+      },
+      {
+        "id": "forest-layer-2",
+        "name": "Низкие облака",
+        "visible": true,
+        "locked": false,
+        "depth": 0.16,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 0.25,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "normal",
+        "tint": "#96b5aa",
+        "seedOffset": 2991,
+        "type": "procedural",
+        "generator": {
+          "name": "haze",
+          "density": 0.75,
+          "amplitude": 0.1,
+          "frequency": 2,
+          "speed": 0.2,
+          "variation": 0.5,
+          "horizon": 0.28,
+          "count": 18
+        }
+      },
+      {
+        "id": "forest-layer-3",
+        "name": "Дальний лес",
+        "visible": true,
+        "locked": false,
+        "depth": 0.25,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "normal",
+        "tint": "#54776d",
+        "seedOffset": 3988,
+        "type": "procedural",
+        "generator": {
+          "name": "trees",
+          "density": 0.75,
+          "amplitude": 0.48,
+          "frequency": 2,
+          "speed": 0.2,
+          "variation": 0.2,
+          "horizon": 0.88,
+          "count": 40
+        }
+      },
+      {
+        "id": "forest-layer-4",
+        "name": "Утренний туман",
+        "visible": true,
+        "locked": false,
+        "depth": 0.34,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 0.4,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "additive",
+        "tint": "#b9c8ab",
+        "seedOffset": 4985,
+        "type": "procedural",
+        "generator": {
+          "name": "haze",
+          "density": 0.75,
+          "amplitude": 0.15,
+          "frequency": 2,
+          "speed": 0.2,
+          "variation": 0.5,
+          "horizon": 0.6,
+          "count": 18
+        }
+      },
+      {
+        "id": "forest-layer-5",
+        "name": "Средние деревья",
+        "visible": true,
+        "locked": false,
+        "depth": 0.44,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "normal",
+        "tint": "#81a28c",
+        "seedOffset": 5982,
+        "type": "procedural",
+        "generator": {
+          "name": "trees",
+          "density": 0.75,
+          "amplitude": 0.8,
+          "frequency": 2,
+          "speed": 0.2,
+          "variation": 0.5,
+          "horizon": 1,
+          "count": 19
+        }
+      },
+      {
+        "id": "forest-layer-6",
+        "name": "Полоса земли",
+        "visible": true,
+        "locked": false,
+        "depth": 0.53,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "normal",
+        "tint": "#53685b",
+        "seedOffset": 6979,
+        "type": "procedural",
+        "generator": {
+          "name": "terrain",
+          "density": 0.75,
+          "amplitude": 0.12,
+          "frequency": 4,
+          "speed": 0.2,
+          "variation": 0.5,
+          "horizon": 0.97,
+          "count": 18
+        }
+      },
+      {
+        "id": "forest-layer-7",
+        "name": "Светлячки",
+        "visible": true,
+        "locked": false,
+        "depth": 0.61,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "additive",
+        "tint": "#dfdca5",
+        "seedOffset": 7976,
+        "type": "particles",
+        "system": {
+          "name": "fireflies",
+          "count": 42,
+          "speed": 0.4,
+          "size": 0.7
+        }
+      },
+      {
+        "id": "forest-layer-8",
+        "name": "Ближние стволы",
+        "visible": true,
+        "locked": false,
+        "depth": 0.72,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "normal",
+        "tint": "#afbea0",
+        "seedOffset": 8973,
+        "type": "procedural",
+        "generator": {
+          "name": "trees",
+          "density": 0.75,
+          "amplitude": 1,
+          "frequency": 2,
+          "speed": 0.2,
+          "variation": 0.85,
+          "horizon": 1,
+          "count": 7
+        }
+      },
+      {
+        "id": "forest-layer-9",
+        "name": "Папоротники",
+        "visible": true,
+        "locked": false,
+        "depth": 0.82,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "normal",
+        "tint": "#9fc59d",
+        "seedOffset": 9970,
+        "type": "procedural",
+        "generator": {
+          "name": "kelp",
+          "density": 0.75,
+          "amplitude": 0.24,
+          "frequency": 2,
+          "speed": 0.2,
+          "variation": 0.9,
+          "horizon": 1,
+          "count": 30
+        }
+      },
+      {
+        "id": "forest-layer-10",
+        "name": "Передние ветви",
+        "visible": true,
+        "locked": false,
+        "depth": 0.92,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": -420,
+          "y": 80
+        },
+        "scale": 1.3,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "normal",
+        "tint": "#c1c6a4",
+        "seedOffset": 10967,
+        "type": "procedural",
+        "generator": {
+          "name": "trees",
+          "density": 0.75,
+          "amplitude": 1,
+          "frequency": 2,
+          "speed": 0.2,
+          "variation": 1,
+          "horizon": 1,
+          "count": 3
+        }
+      },
+      {
+        "id": "forest-layer-11",
+        "name": "Пыль в лучах",
+        "visible": true,
+        "locked": false,
+        "depth": 0.98,
+        "parallaxFactor": "auto",
+        "position": {
+          "x": 0,
+          "y": 0
+        },
+        "scale": 1,
+        "opacity": 1,
+        "fogInfluence": 1,
+        "lightResponse": 1,
+        "blendMode": "additive",
+        "tint": "#d9d0a0",
+        "seedOffset": 11964,
+        "type": "particles",
+        "system": {
+          "name": "dust",
+          "count": 65,
+          "speed": 0.15,
+          "size": 1.4
+        }
+      }
+    ],
+    "lights": [
+      {
+        "id": "forest-light",
+        "x": 200,
+        "y": -260,
+        "radius": 780,
+        "intensity": 1.35,
+        "color": "#d0c998",
+        "motion": 0.35,
+        "spot": false
+      }
+    ],
+    "timeline": {
+      "duration": 60,
+      "loop": true,
+      "tracks": []
+    },
+    "spatial": {
+      "enabled": true,
+      "navigation": "walk",
+      "speed": 8,
+      "camera": {
+        "position": {
+          "x": 18,
+          "y": 20,
+          "z": 38
+        },
+        "target": {
+          "x": 0,
+          "y": 3,
+          "z": 0
+        }
+      }
+    }
+  }
+}
